@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkGray: "hsl(0, 0%, 63%)",
+              Black: " hsl(0, 0%, 0%)",
+              White: "hsl(0, 0%, 100%)",
+              veryDarkGray: "hsl(0, 0%, 27%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="flex flex-col lg:flex-row justify-between">
+      <header class="basis-full lg:basis-7/12 max-h-4/6 relative">
+        <nav class="absolute top-7 left-0 p-5 flex items-center gap-10">
+          <img
+            src="./images/icon-hamburger.svg"
+            class="sm:hidden"
+            alt="menu bar"
+            id="hamburger" />
+          <img src="./images/logo.svg" alt="logo" />
+          <ul class="flex gap-5 text-white text-xl" id="menuList">
+            <img
+              src="./images/icon-close.svg"
+              class="sm:hidden"
+              alt="close icon"
+              id="close" />
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./images/desktop-image-hero-1.jpg"
+          class="object-cover w-full h-full"
+          alt="hero img"
+          id="hero" />
+        <div
+          class="absolute right-0 bottom-0 bg-black flex justify-between h-16 items-center w-24">
+          <img
+            src="./images/icon-angle-left.svg"
+            class="cursor-pointer hover:bg-gray-500 transition duration-300"
+            id="left"
+            alt="left angle" />
+          <img
+            src="./images/icon-angle-right.svg"
+            class="cursor-pointer hover:bg-gray-500 transition duration-300"
+            id="right"
+            alt="right angle" />
+        </div>
+      </header>
+
+      <div class="basis-full lg:basis-4/12 lg:pt-12 pr-6 p-6">
+        <h1 class="text-3xl capitalize mb-2">innovative ways to decorate</h1>
+        <p class="text-lg xl:text-sm leading-7 opacity-75">
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+        <button
+          class="uppercase flex items-center gap-5 tracking-[0.6rem] mt-5">
+          Shop now <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section class="flex flex-col lg:flex-row flex-wrap">
+      <div class="basis-full xl:basis-1/4">
+        <img
+          src="./images/image-about-dark.jpg"
+          class="block mx-auto"
+          alt="room" />
+      </div>
+      <div class="basis-full xl:basis-2/4 p-10">
+        <h3 class="uppercase text-lg font-medium">About our furniture</h3>
+        <p class="text-lg xl:text-sm leading-7 opacity-75">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <div class="basis-full xl:basis-1/4">
+        <img
+          src="./images/image-about-light.jpg"
+          class="block mx-auto"
+          alt="lighted room" />
+      </div>
+    </section>
+    <!--  We are available all across the globe With stores all over the
+    world, it's easy for you to find furniture for your home or place of
+    business. Locally, we’re in most major cities throughout the country. Find
+    the branch nearest you using our store locator. Any questions? Don't
+    hesitate to contact us today. Shop now Manufactured with the best materials
+    Our modern furniture store provide a high level of quality. Our company has
+    invested in advanced technology to ensure that every product is made as
+    perfect and as consistent as possible. With three decades of experience in
+    this industry, we understand what customers want for their home and office. -->
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 650px) {
+  #menuList {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    color: var(--Very-Dark-Gray);
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+  }
+  #menuList.active {
+    right: 0;
+    pointer-events: auto;
+  }
+  body.active {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    overflow: hidden;
+  }
+  body.active #menuList {
+    pointer-events: auto;
+  }
+}
